@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo List App</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm-8">
+
+            <h4 class="display-4">ToDo List</h4>
+            <br/>
+            <div class="card">
+                <div class="card-header">
+                    The list
+                </div>
+                <div class="card-body">
+                    <ol class="list-group" id="itemList">
+                        <li class="list-group-item">
+                            <input type="checkbox" class="todoCheckbox" id="todo1">
+                            <label for="todo1" class="labelClass">Do laundry</label>
+                            <button class="close-btn" type="button"></button>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="todoCheckbox" type="checkbox" id="todo2">
+                            <label for="todo2" class="labelClass">Clean bedroom</label>
+                            <button class="close-btn" type="button"></button>
+                        </li>
+                        <li class="list-group-item">
+                            <input type="checkbox" class="todoCheckbox" id="todo3">
+                            <label for="todo3" class="labelClass">Bake cake</label>
+                            <button class="close-btn" type="button"></button>
+                        </li>
+                        <li class="list-group-item">
+                            <input type="checkbox" class="todoCheckbox" id="todo4">
+                            <label for="todo4" class="labelClass">Pick up groceries</label>
+                            <button class="close-btn" type="button"></button>
+                        </li>
+                        <li class="list-group-item">
+                            <input type="checkbox" class="todoCheckbox" id="todo5">
+                            <label for="todo5" class="labelClass">Post letter</label>
+                            <button class="close-btn" type="button"></button>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <br/>
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group" id="AddToList" >
+                            <label for="itemText">New Item</label>
+                            <input type="text" class="form-control" id="itemText" placeholder="Fetch kids from school">
+                            <small class="form-text text-muted">Write something for your TODO list</small>
+                        </div>
+                        <button type="submit" id="submitItemBtn" class="btn btn-primary">Add Task</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm"></div>
+    </div>
+</div>
+
+</body>
+
+</html>
